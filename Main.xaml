@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="262,743" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="925,3698" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="26">
       <x:String>System.Activities</x:String>
@@ -58,7 +58,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Sequence Main 01-01-2020-15-28" sap:VirtualizedContainerService.HintSize="242,643" sap2010:WorkflowViewState.IdRef="Sequence_57">
+  <Sequence DisplayName="Sequence Main 02-01-2020-23-10" sap:VirtualizedContainerService.HintSize="905,3598" sap2010:WorkflowViewState.IdRef="Sequence_57">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dataTableFormExcel" />
       <Variable x:TypeArguments="x:String" Name="pathFileExcelSource" />
@@ -71,7 +71,7 @@
         <x:Boolean x:Key="IsPinned">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="selectFileAndFolder" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_32">
+    <Sequence DisplayName="selectFileAndFolder" sap:VirtualizedContainerService.HintSize="863,66" sap2010:WorkflowViewState.IdRef="Sequence_32">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -159,7 +159,7 @@
         </ui:CommentOut>
       </Sequence>
     </Sequence>
-    <Sequence DisplayName="setMicrosoft Print to PDF" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_74">
+    <Sequence DisplayName="setMicrosoft Print to PDF" sap:VirtualizedContainerService.HintSize="863,66" sap2010:WorkflowViewState.IdRef="Sequence_74">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -244,7 +244,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:CloseApplication>
     </Sequence>
-    <Sequence DisplayName="checkIerpOpen" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_67">
+    <Sequence DisplayName="checkIerpOpen" sap:VirtualizedContainerService.HintSize="863,66" sap2010:WorkflowViewState.IdRef="Sequence_67">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="booIerpOpen" />
       </Sequence.Variables>
@@ -388,7 +388,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="readExcel" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="[pathFileExcelSource]">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="readExcel" sap:VirtualizedContainerService.HintSize="863,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="[pathFileExcelSource]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
@@ -423,13 +423,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ExcelApplicationScope>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="[pathGoogleDrive+&quot;\index.xlsx&quot;]">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="863,3006" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="[pathGoogleDrive+&quot;\index.xlsx&quot;]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="952,3167" sap2010:WorkflowViewState.IdRef="Sequence_72">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="829,2857" sap2010:WorkflowViewState.IdRef="Sequence_72">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="intCount" />
               <Variable x:TypeArguments="ui:GenericValue" Name="runCount" />
@@ -437,16 +437,16 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dataTableFormExcel]" DisplayName="saveFileToPDF" sap:VirtualizedContainerService.HintSize="910,3075" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dataTableFormExcel]" DisplayName="saveFileToPDF" sap:VirtualizedContainerService.HintSize="787,2765" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="860,2927" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="737,2618" sap2010:WorkflowViewState.IdRef="Sequence_29">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="strPoID" />
                       <Variable x:TypeArguments="x:String" Name="pathFileNameFinal" />
@@ -456,10 +456,10 @@
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="AAASequence" sap:VirtualizedContainerService.HintSize="818,68" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                    <Sequence DisplayName="AAASequence" sap:VirtualizedContainerService.HintSize="695,66" sap2010:WorkflowViewState.IdRef="Sequence_69">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -485,7 +485,7 @@
                         </Assign.Value>
                       </Assign>
                     </Sequence>
-                    <Sequence DisplayName="FileName and Floder" sap:VirtualizedContainerService.HintSize="818,68" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                    <Sequence DisplayName="FileName and Floder" sap:VirtualizedContainerService.HintSize="695,66" sap2010:WorkflowViewState.IdRef="Sequence_48">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="strSiteName" />
                         <Variable x:TypeArguments="x:String" Name="strVenderName" />
@@ -603,7 +603,7 @@
                         </Assign.Value>
                       </Assign>
                     </Sequence>
-                    <Sequence DisplayName="AAASequence" sap:VirtualizedContainerService.HintSize="818,68" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                    <Sequence DisplayName="AAASequence" sap:VirtualizedContainerService.HintSize="695,66" sap2010:WorkflowViewState.IdRef="Sequence_75">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -692,7 +692,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:ExcelWriteCell>
                     </Sequence>
-                    <Flowchart DisplayName="FlowchartInSaveFile" sap:VirtualizedContainerService.HintSize="818,1587" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+                    <Flowchart DisplayName="FlowchartInSaveFile" sap:VirtualizedContainerService.HintSize="695,1423" sap2010:WorkflowViewState.IdRef="Flowchart_2">
                       <Flowchart.Variables>
                         <Variable x:TypeArguments="x:Boolean" Name="booIerpError" />
                         <Variable x:TypeArguments="x:Boolean" Name="booExportPdf" />
@@ -703,12 +703,12 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           <av:Point x:Key="ShapeLocation">471,0</av:Point>
                           <av:Size x:Key="ShapeSize">60,75</av:Size>
                           <av:PointCollection x:Key="ConnectorLocation">501,75 501,125</av:PointCollection>
-                          <x:Double x:Key="Height">1551</x:Double>
-                          <x:Double x:Key="Width">784.5</x:Double>
+                          <x:Double x:Key="Height">1387.08</x:Double>
+                          <x:Double x:Key="Width">661</x:Double>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Flowchart.StartNode>
@@ -718,11 +718,11 @@
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <av:Point x:Key="ShapeLocation">401,327</av:Point>
-                            <av:Size x:Key="ShapeSize">200,52</av:Size>
+                            <av:Size x:Key="ShapeSize">200,51</av:Size>
                             <av:PointCollection x:Key="ConnectorLocation">501,378 501,428</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="enterPreviewReport" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="TypeInto_20" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+                        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="enterPreviewReport" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_20" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
                           <ui:TypeInto.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="47aa8d1c18f2e1728167b2c51e7504e9" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='imsUI_MDIParent' /&gt;&lt;wnd ctrlname='imsUI_MFC_PurchaseOrderPrint' /&gt;&lt;wnd ctrlname='pnlMenu' /&gt;&lt;wnd ctrlname='shdTasks' /&gt;&lt;wnd ctrlname='PreviewReport' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -745,17 +745,13 @@
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <av:Point x:Key="ShapeLocation">401,428</av:Point>
-                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                <av:Size x:Key="ShapeSize">200,51</av:Size>
                                 <av:PointCollection x:Key="ConnectorLocation">501,479 501,509 501.5,509 501.5,529</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:UiElementExists DisplayName="ExportWindowsIsOpen" Exists="[booExportWindows]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                            <ui:UiElementExists DisplayName="ExportWindowsIsOpen" Exists="[booExportWindows]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
                               <ui:UiElementExists.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="69fcb19fa40f424ddc6d2649d7e15706" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='FrmPreviewReport' /&gt;" WaitForReady="COMPLETE">
-                                  <ui:Target.TimeoutMS>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:Target.TimeoutMS>
-                                </ui:Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="69fcb19fa40f424ddc6d2649d7e15706" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='FrmPreviewReport' /&gt;" TimeoutMS="5000" WaitForReady="COMPLETE" />
                               </ui:UiElementExists.Target>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -779,11 +775,11 @@
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <av:Point x:Key="ShapeLocation">100,666</av:Point>
-                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
                                         <av:PointCollection x:Key="ConnectorLocation">200,717 200,785</av:PointCollection>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:TypeInto DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" ContinueOnError="False" DelayBefore="1000" DisplayName="Export Report By Enter" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="TypeInto_24" SendWindowMessages="False" SimulateType="False" Text="%[k(right)][k(left)][k(right)][k(left)][k(right)][k(enter)]">
+                                    <ui:TypeInto DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" ContinueOnError="False" DelayBefore="1000" DisplayName="Export Report By Enter" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_24" SendWindowMessages="False" SimulateType="False" Text="%[k(right)][k(left)][k(right)][k(left)][k(right)][k(enter)]">
                                       <ui:TypeInto.Target>
                                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='FrmPreviewReport' /&gt;&#xA;&lt;wnd ctrlname='CrystalReportViewer1' /&gt;&#xA;&lt;wnd cls='WindowsForms10.Window.*' idx='4' /&gt;&#xA;&lt;ctrl name='Export Report' role='push button' /&gt;&#xA;" WaitForReady="COMPLETE">
                                           <ui:Target.TimeoutMS>
@@ -803,11 +799,11 @@
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <av:Point x:Key="ShapeLocation">100,785</av:Point>
-                                            <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                            <av:Size x:Key="ShapeSize">200,51</av:Size>
                                             <av:PointCollection x:Key="ConnectorLocation">200,836 200,866 200.5,866 200.5,904</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:UiElementExists DisplayName="ExportReportIsOpen" Exists="[booExportPdf]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                                        <ui:UiElementExists DisplayName="ExportReportIsOpen" Exists="[booExportPdf]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                                           <ui:UiElementExists.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1145f563adbbd43c7da7833a61e43daf" Selector="&lt;wnd app='intuitiveerp.exe' cls='#32770' title='Print' /&gt;" TimeoutMS="1000" WaitForReady="INTERACTIVE" />
                                           </ui:UiElementExists.Target>
@@ -856,11 +852,11 @@
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <av:Point x:Key="ShapeLocation">90,1034.5</av:Point>
-                                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                     <av:PointCollection x:Key="ConnectorLocation">190,1085.5 190,1115.5 180,1115.5 180,1136.5</av:PointCollection>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:UiElementExists DisplayName="Element Exists 'IntuitiveERP.exe Intuit...'" Exists="[booIerpError2]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+                                                <ui:UiElementExists DisplayName="Element Exists 'IntuitiveERP.exe Intuit...'" Exists="[booIerpError2]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
                                                   <ui:UiElementExists.Target>
                                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="68a17d7c69a57d324d4e46103e0f76a2" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='imsErrorBox' /&gt;">
                                                       <ui:Target.TimeoutMS>
@@ -884,7 +880,7 @@
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         <av:Point x:Key="ShapeLocation">140.5,1136.5</av:Point>
                                                         <av:Size x:Key="ShapeSize">79,87</av:Size>
-                                                        <av:PointCollection x:Key="TrueConnector">140.5,1180 110.5,1180 110.5,1234 500,1234 500,1204</av:PointCollection>
+                                                        <av:PointCollection x:Key="TrueConnector">140.5,1180 110.5,1180 110.5,1232 500,1232 500,1202</av:PointCollection>
                                                         <av:PointCollection x:Key="FalseConnector">219.5,1180 330,1180 330,691.5 300,691.5</av:PointCollection>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
@@ -893,11 +889,11 @@
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <av:Point x:Key="ShapeLocation">400,1136</av:Point>
-                                                            <av:Size x:Key="ShapeSize">200,68</av:Size>
-                                                            <av:PointCollection x:Key="ConnectorLocation">400,1170 370,1170 370,151 401,151</av:PointCollection>
+                                                            <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                                            <av:PointCollection x:Key="ConnectorLocation">400,1169 370,1169 370,150.5 401,150.5</av:PointCollection>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                                        <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_56">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1049,11 +1045,11 @@
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <av:Point x:Key="ShapeLocation">401,125</av:Point>
-                                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                 <av:PointCollection x:Key="ConnectorLocation">501,176 501,206 500,206 500,214.5</av:PointCollection>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="SetToClipboard_2" Text="[strPoID]">
+                                                            <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SetToClipboard_2" Text="[strPoID]">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1065,11 +1061,11 @@
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <av:Point x:Key="ShapeLocation">400,214.5</av:Point>
-                                                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                     <av:PointCollection x:Key="ConnectorLocation">500,265.5 500,295.5 501,295.5 501,327</av:PointCollection>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" ContinueOnError="False" DisplayName="fill" EmptyField="True" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="TypeInto_27" SendWindowMessages="False" SimulateType="False" Text="%[d(ctrl)]v[u(ctrl)]">
+                                                                <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" ContinueOnError="False" DisplayName="fill" EmptyField="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_27" SendWindowMessages="False" SimulateType="False" Text="%[d(ctrl)]v[u(ctrl)]">
                                                                   <ui:TypeInto.Target>
                                                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8177534983e4508df6136c136fd6373f" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='imsUI_MDIParent' /&gt;&lt;wnd ctrlname='imsUI_MFC_PurchaseOrderPrint' /&gt;&lt;wnd ctrlname='pnlBody' /&gt;&lt;wnd ctrlname='pnlCriteria' /&gt;&lt;wnd ctrlname='ImsGroupBox1' /&gt;&lt;wnd ctrlname='txtPOID' /&gt;">
                                                                       <ui:Target.TimeoutMS>
@@ -1114,13 +1110,17 @@
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <av:Point x:Key="ShapeLocation">390,684</av:Point>
-                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
-                                        <av:PointCollection x:Key="ConnectorLocation">490,736 490,756.5</av:PointCollection>
+                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">490,735 490,756.5</av:PointCollection>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:UiElementExists DisplayName="Po Not Valid" Exists="[booPoNotValid]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+                                    <ui:UiElementExists DisplayName="Po Not Valid" Exists="[booPoNotValid]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
                                       <ui:UiElementExists.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="366d88c42a26e5e8135e8865276dbedf" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='imsUI_DisplayMessage' /&gt;" TimeoutMS="5000" WaitForReady="INTERACTIVE" />
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="366d88c42a26e5e8135e8865276dbedf" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='imsUI_DisplayMessage' /&gt;" WaitForReady="INTERACTIVE">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                        </ui:Target>
                                       </ui:UiElementExists.Target>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1136,14 +1136,14 @@
                                             <av:Point x:Key="ShapeLocation">450.5,756.5</av:Point>
                                             <av:Size x:Key="ShapeSize">79,87</av:Size>
                                             <av:PointCollection x:Key="FalseConnector">529.5,800 559.5,800 559.5,854 500,854 500,884</av:PointCollection>
-                                            <av:PointCollection x:Key="TrueConnector">450.5,800 369,800 369,1340 399,1340</av:PointCollection>
+                                            <av:PointCollection x:Key="TrueConnector">450.5,800 349,800 349,1340 379,1340</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <FlowDecision.True>
                                           <FlowStep x:Name="__ReferenceID16">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <av:Point x:Key="ShapeLocation">399,1310</av:Point>
+                                                <av:Point x:Key="ShapeLocation">379,1310</av:Point>
                                                 <av:Size x:Key="ShapeSize">262,60</av:Size>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
@@ -1167,13 +1167,17 @@
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <av:Point x:Key="ShapeLocation">400,884</av:Point>
-                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
-                                                <av:PointCollection x:Key="ConnectorLocation">500,936 500,986.5</av:PointCollection>
+                                                <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                                <av:PointCollection x:Key="ConnectorLocation">500,935 500,986.5</av:PointCollection>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:UiElementExists DisplayName="Error" Exists="[booIerpError]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                                            <ui:UiElementExists DisplayName="Error" Exists="[booIerpError]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                                               <ui:UiElementExists.Target>
-                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2bff5e1815a2e2b5f22fd96773d9a0cd" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='imsErrorBox' /&gt;" TimeoutMS="5000" WaitForReady="INTERACTIVE" />
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2bff5e1815a2e2b5f22fd96773d9a0cd" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='imsErrorBox' /&gt;" WaitForReady="INTERACTIVE">
+                                                  <ui:Target.TimeoutMS>
+                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                  </ui:Target.TimeoutMS>
+                                                </ui:Target>
                                               </ui:UiElementExists.Target>
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1189,7 +1193,7 @@
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     <av:Point x:Key="ShapeLocation">460.5,986.5</av:Point>
                                                     <av:Size x:Key="ShapeSize">79,87</av:Size>
-                                                    <av:PointCollection x:Key="FalseConnector">539.5,1030 631,1030 631,353 601,353</av:PointCollection>
+                                                    <av:PointCollection x:Key="FalseConnector">539.5,1030 631,1030 631,352.5 601,352.5</av:PointCollection>
                                                     <av:PointCollection x:Key="TrueConnector">460.5,1030 440,1030 440,1106 500,1106 500,1136</av:PointCollection>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
@@ -1223,45 +1227,46 @@
                       <x:Reference>__ReferenceID15</x:Reference>
                       <x:Reference>__ReferenceID16</x:Reference>
                     </Flowchart>
-                    <If Condition="[booPoSkip]" sap:VirtualizedContainerService.HintSize="818,884" sap2010:WorkflowViewState.IdRef="If_4">
+                    <If Condition="[booPoSkip]" sap:VirtualizedContainerService.HintSize="695,745" sap2010:WorkflowViewState.IdRef="If_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="376,325" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                        <Sequence sap:VirtualizedContainerService.HintSize="242,234" sap2010:WorkflowViewState.IdRef="Sequence_76">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'IntuitiveERP.exe  Messa...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseWindow_4" InformativeScreenshot="1cb18efd58609195a005afbaa1db0626" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='imsUI_DisplayMessage' /&gt;" WaitForReady="INTERACTIVE">
+                          <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'IntuitiveERP.exe  Messa...'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CloseWindow_4" InformativeScreenshot="1cb18efd58609195a005afbaa1db0626" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='imsUI_DisplayMessage' /&gt;" WaitForReady="INTERACTIVE">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CloseWindow>
-                          <ui:ExcelWriteCell Cell="[&quot;K&quot;+intCount.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_24" SheetName="Sheet1" Text="Po not valid">
+                          <ui:ExcelWriteCell Cell="[&quot;K&quot;+intCount.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_24" SheetName="Sheet1" Text="Po not valid">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ExcelWriteCell>
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="376,735" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                        <Sequence sap:VirtualizedContainerService.HintSize="242,598" sap2010:WorkflowViewState.IdRef="Sequence_77">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'IntuitiveERP.exe  Print'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="TypeInto_28" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
+                          <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'IntuitiveERP.exe  Print'" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_28" SendWindowMessages="False" SimulateType="False" Text="%[k(enter)]">
                             <ui:TypeInto.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="86d7dfdcbf905e06c3abcb03bb7d4fd2" Selector="&lt;wnd app='intuitiveerp.exe' cls='#32770' title='Print' /&gt;&lt;wnd ctrlid='1' title='OK' /&gt;" WaitForReady="COMPLETE">
                                 <ui:Target.TimeoutMS>
@@ -1276,14 +1281,14 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:TypeInto>
-                          <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[pathFileNameFinal]">
+                          <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[pathFileNameFinal]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:SetToClipboard>
-                          <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" ContinueOnError="False" DisplayName="saveFileName" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="TypeInto_17" SendWindowMessages="False" SimulateType="False" Text="%[d(ctrl)]v[u(ctrl)][k(enter)]">
+                          <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" ContinueOnError="False" DisplayName="saveFileName" EmptyField="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_17" SendWindowMessages="False" SimulateType="False" Text="%[d(ctrl)]v[u(ctrl)][k(enter)]">
                             <ui:TypeInto.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="38af13781fa7e239d457af2d5b36f138" Selector="&lt;wnd app='intuitiveerp.exe' cls='#32770' title='Save Print Output As' /&gt;&#xA;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&#xA;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&#xA;&lt;wnd ctrlid='1001' /&gt;&#xA;">
                                 <ui:Target.TimeoutMS>
@@ -1301,7 +1306,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:TypeInto>
-                          <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" ContinueOnError="False" DisplayName="Close Window 'IntuitiveERP.exe  FrmPr...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseWindow_2" InformativeScreenshot="3f86843a587e0b0c82ae6192bb7a4a72" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='FrmPreviewReport' /&gt;" WaitForReady="COMPLETE">
+                          <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" ContinueOnError="False" DisplayName="Close Window 'IntuitiveERP.exe  FrmPr...'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CloseWindow_2" InformativeScreenshot="3f86843a587e0b0c82ae6192bb7a4a72" Selector="&lt;wnd app='intuitiveerp.exe' ctrlname='FrmPreviewReport' /&gt;" WaitForReady="COMPLETE">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1309,14 +1314,14 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CloseWindow>
-                          <ui:ExcelWriteCell Cell="[&quot;K&quot;+intCount.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_25" SheetName="Sheet1" Text="OK">
+                          <ui:ExcelWriteCell Cell="[&quot;K&quot;+intCount.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_25" SheetName="Sheet1" Text="OK">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ExcelWriteCell>
-                          <ui:ExcelWriteCell Cell="[&quot;L&quot;+intCount.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_26" SheetName="Sheet1" Text="[pathFileNameFinal+&quot;.pdf&quot;]">
+                          <ui:ExcelWriteCell Cell="[&quot;L&quot;+intCount.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_26" SheetName="Sheet1" Text="[pathFileNameFinal+&quot;.pdf&quot;]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1332,7 +1337,7 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
@@ -1341,11 +1346,11 @@
       </ui:ExcelApplicationScope.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ExcelApplicationScope>
-    <ui:MessageBox ChosenButton="{x:Null}" Buttons="Ok" Caption="Process Finished." DisplayName="End" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Process Finished.&quot;]" TopMost="True">
+    <ui:MessageBox ChosenButton="{x:Null}" Buttons="Ok" Caption="Process Finished." DisplayName="End" sap:VirtualizedContainerService.HintSize="863,51" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Process Finished.&quot;]" TopMost="True">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
